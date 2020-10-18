@@ -1,15 +1,16 @@
 body {
     margin: 0;
+    /* width: 1400px; */
 }
 .bodys {
     margin: 0px auto;
-    width: 1400px;
+    width: 100%;
 }
 .navbar {
     display: flex;
     background-color: black;
     height: 70px;
-    width: 1400px;
+    width: 100%;
 
     justify-content: space-between;
 }
@@ -23,7 +24,7 @@ body {
 .navbar_title {
     display: flex;
     flex-direction: row;
-    padding: 25px 0px 25px 0px;
+    padding: 26.6px 0px 25px 0px;
 }
 
 .navbar_title > * {
@@ -32,6 +33,28 @@ body {
     font-family: "Open Sans";
     color: rgba(255, 255, 255, 0.69);
     line-height: 1.2;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+A:link { 
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.69);
+} 
+A:visited { 
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.69);
+} 
+
+A:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    
+}
+A:active { 
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    size: 20px;
 }
  
 /* .Contact_ {
