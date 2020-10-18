@@ -5,7 +5,7 @@ body {
     display: flex;
     background-color: black;
     height: 70px;
-    width: 100%;
+    width: 1400px;
     justify-content: space-between;
 }
 
