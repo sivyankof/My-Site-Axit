@@ -1,11 +1,16 @@
 body {
-    margin: 0px;
+    margin: 0;
+}
+.bodys {
+    margin: 0px auto;
+    width: 1400px;
 }
 .navbar {
     display: flex;
     background-color: black;
     height: 70px;
     width: 1400px;
+
     justify-content: space-between;
 }
 
