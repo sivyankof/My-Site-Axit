@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+}
+.navbar {
+    display: flex;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar_img {
+    width: 79px;
+    height: 27px;
+    padding: 20px 0px 20px 150px;
+}
+
+.navbar_title {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0px 25px 0px;
+}
+
+.navbar_title > * {
+    margin-right: 45px;
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgba(255, 255, 255, 0.69);
+    line-height: 1.2;
+}
+ 
+/* .Contact_ {
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgba(255, 255, 255, 0.69);
+    line-height: 1.2;
+    text-align: right;
+    position: absolute;
+    left: 1199.156px;
+    top: 26.6px;
+    z-index: 202;
+  } */
+  
