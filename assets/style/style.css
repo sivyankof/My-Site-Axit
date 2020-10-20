@@ -109,7 +109,7 @@ A:active {
     FONT-WEIGHT: 600;
     color: rgb(255, 255, 255);
     line-height: 1.2;
-    background: url(/assets/images/Download_Button_Header.png);
+    background: url(../images/Download_Button_Header.png);
     width: 135px;
     height: 42px;
     margin-top: 35px;
