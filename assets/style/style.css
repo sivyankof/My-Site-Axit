@@ -1,11 +1,7 @@
  * {
     margin: 0;
-    /* width: 1400px; */
 }
-.bodys {
-    margin: 0px auto;
-    width: 100%;
-}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -49,6 +45,7 @@ A:visited {
 A:hover {
     text-decoration: underline;
     color: rgb(255, 255, 255);
+    transition: 0.4s;
     
 }
 A:active { 
@@ -57,15 +54,106 @@ A:active {
     size: 20px;
 }
  
-/* .Contact_ {
-    font-size: 14px;
-    font-family: "Open Sans";
-    color: rgba(255, 255, 255, 0.69);
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: no-repeat url(/assets/images/Header_Panel.png); 
+    width: auto;
+    height: 711px;
+    background-size: 100%;
+    padding: 150px;
+
+}
+.header_block {
+    height: min-content;
+    max-width: 520px;
+}
+.signap {
+    background-color: #ffffff;
+    width: 360px;
+    max-block-size: 100%;
+    height: 362px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.signap_input {
+    display: flex;
+    flex-direction: column;
+}
+.header_title {
+    font-size: 36px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
     line-height: 1.2;
-    text-align: right;
-    position: absolute;
-    left: 1199.156px;
-    top: 26.6px;
-    z-index: 202;
-  } */
+    text-align: left;
+    margin-top: 24px;
+}
+.header_divider {
+      margin: 27px 0 27px -4px;
+}
+.header_text {
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.438;
+    text-align: left;
+    FONT-WEIGHT: 300;
+}
+
+.button_download {
+    border: none;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    FONT-WEIGHT: 600;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    background: url(/assets/images/Download\ Button\ Header.png);
+    width: 135px;
+    height: 42px;
+    margin-top: 35px;
+    padding: 0;
+}
+.button_download:hover { 
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-duration: 0.4s;
+}
+
+.signap_title {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    height: 54px;
+    padding: 15px 0 15px 0;
+    background-color: #f5f5f5;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.free {
+    color: #fca667;
+}
+input {
+    border: none;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    width: 285px;
+    font-size: 14px;
+    padding:10px;
+}
+input::placeholder {
+        color: rgb(189, 189, 189);
+        font-size: 1.2em; 
+}
+div .signap_input {
+    align-items: center;
+    height: 254px;
+    justify-content: space-around;
+}
+
+
   
