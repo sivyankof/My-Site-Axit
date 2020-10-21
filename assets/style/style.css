@@ -1,8 +1,7 @@
  * {
     margin: 0;
 }
-
-.navbar {
+.navbar {                /* стили для меню навбара  */
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -12,19 +11,16 @@
     justify-content: space-between;
     /* box-shadow: 0 0 2px rgb(255, 255, 255); */
 }
-
 .navbar_img {
     width: 79px;
     height: 27px;
     padding: 20px 0px 20px 150px;
 }
-
 .navbar_title {
     display: flex;
     flex-direction: row;
     padding: 26.6px 0px 25px 0px;
 }
-
 .navbar_title > * {
     margin-right: 45px;
     font-size: 14px;
@@ -34,8 +30,7 @@
     text-decoration: none;
     font-weight: 600;
 }
-
-A:link { 
+A:link {         /* стили для кнопоко меню навбара */
     text-decoration: none;
     color: rgba(255, 255, 255, 0.69);
 } 
@@ -43,7 +38,6 @@ A:visited {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.69);
 } 
-
 A:hover {
     text-decoration: underline;
     color: rgb(255, 255, 255);
@@ -55,8 +49,7 @@ A:active {
     color: rgb(255, 0, 0);
     size: 20px;
 }
- 
-.header {
+.header {                    /* стили для второго блока header */
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -73,7 +66,7 @@ A:active {
     height: min-content;
     max-width: 520px;
 }
-.signap {
+.signap {                   /* блок ввода своих данных */
     width: 360px;
     max-block-size: 100%;
     height: 362px;
@@ -104,8 +97,7 @@ A:active {
     text-align: left;
     FONT-WEIGHT: 300;
 }
-
-.button_download {
+.button_download {    /* кнопка скачать  */
     border: none;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -124,7 +116,6 @@ A:active {
     background-color: rgba(255, 255, 255, 0.1);
     transition-duration: 0.4s;
 }
-
 .signap_title {
     box-sizing: border-box;
     font-size: 20px;
@@ -139,7 +130,7 @@ A:active {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
-.free {
+.free {   /* оранжевый цвет для текста фри в титле сигнапа */
     color: #fca667;
 }
 input {
@@ -163,8 +154,7 @@ div .signap_input {
     background-color: #ffffff;
     padding: 4px 0 32px;
     }
-
-.button_starter {
+.button_starter {    /* кнопка для старта сигнапа */
     border: none;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -175,16 +165,14 @@ div .signap_input {
     width: 360px;
     height: 54px;
     padding: 0px;
-    outline: none;
-    
+    outline: none;   
 }
 .button_starter:hover { 
     text-decoration: none;
     background-color: #ff801f;
     transition-duration: 0.4s;
 }
-
-.brand_bar {
+.brand_bar {   /* третьи блок с иконками брендов */
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -196,25 +184,21 @@ div .signap_input {
 .brand_box1 {
     width: 364px;
 }
-
 .brand_box1 > h2 {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     color: rgb(51, 51, 51);
     font-weight: bold;
 }
-
 .brand_box1 > .brand_box_text {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     color: rgb(134, 135, 139);
     line-height: 1.429;
-  }
-  
-  .brand_box2 {
+}
+.brand_box2 {
       padding-top: 10px;
-  }
- 
-  .display {
+}
+.display {
       display: block;
-  }
+}
