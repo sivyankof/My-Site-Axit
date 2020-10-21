@@ -215,3 +215,6 @@ div .signap_input {
       padding-top: 10px;
   }
  
+  .display {
+      display: block;
+  }
