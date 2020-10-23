@@ -251,7 +251,7 @@ a {
     /* padding: 147px 145px 115px 150px; */
     }
 
-.box,.first {
+.features .box, .first {
     display: flex;
     flex-direction: row;
     /* width: 685px; */
@@ -273,7 +273,7 @@ a {
     box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
     margin: 1px;
 }
-.container {       
+.features .box .container {       
     margin: 0px 100px 0 100px;
     width: 474px;
 }
@@ -318,3 +318,185 @@ a {
     background-color: #ff8b38;
 }
 
+.our_process {
+    display: flex;
+    flex-direction: column;
+    height: 592px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+ .container .title {
+    font-size: 36px;
+    font-family: "Raleway";
+    color: rgb(33, 33, 33);
+    line-height: 1.194;
+    text-align: center;
+}
+.hr {
+    justify-content: center;
+}
+.circle {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 2px solid #ff8b38;
+    border-radius: 70px;
+    width: 70px;
+    height: 70px;
+}
+.wrapper_box {
+    display: flex;
+    flex-direction: row;
+}
+.container_box {
+    width: 350px;
+    /* height: 200px; */
+}
+.container .title_text, .box_text {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(134, 135, 139);
+    line-height: 1.429;
+    text-align: center;
+}
+.wrapper_box .container_box > * {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.wrapper_box .box_title {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.our_process .container {
+    margin-bottom: 80px;
+}
+
+.pricing {      /* начало контейнера ПРисинн*/
+    height: 883px;
+    background-color: #f5f5f5;
+}
+.pricing > .container {
+    padding-top: 100px;
+    margin: 0px auto 80px;
+}
+.wrapper_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 150px 0 150px;
+}
+.wrapper_box .box ul {
+    width: 343px;
+}
+.wrapper_box .box  li {
+    height: 40px;
+    text-align: center;
+    margin-bottom: 1px;
+    padding-top: 10px;
+    box-sizing: border-box;
+
+    
+}
+.wrapper_box .box ul .basic {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    background-color: #333333;
+
+}
+
+.wrapper_box .box  ul .price {
+    font-size: 80px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.686;
+    text-align: center;
+    background-color: #333333;
+    height: 100px;
+  }
+  .wrapper_box .box  ul .text_comm {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        color: rgba(255, 255, 255, 0.502);
+        line-height: 1.714;
+        text-align: center;
+        background-color: #333333;
+ }
+  
+ .wrapper_box .box  ul > .texte_gray {
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(134, 135, 139);
+    text-transform: uppercase;
+    line-height: 1.714;
+    text-align: center;
+    background-color: white;
+  }
+  .wrapper_box .box ul > .texte_gray:hover{
+      color: white;
+      background-color: #ff8b38;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      transform: scale(1.03);
+      
+  }
+  
+.testimonials .container:first-child {  /* седьмой блок с отзывами*/
+    width: 655px;
+    margin: 100px auto 50px;
+}
+.testimonials {
+    padding: 0 170px 100px 170px;
+}
+
+.testimonials .container .comment {
+    width: 273px;
+}
+.testimonials .container .comment .photo_fio  {
+    display: flex;
+    flex-direction: row;
+}
+.testimonials .container:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .comment .wrapper_comment{
+    background: no-repeat url(../images/background_comment.png);
+    padding: 20px 10px 40px 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(134, 135, 139);
+    line-height: 1.2;
+    font-style: italic;
+}
+
+.container .comment .fio {
+    margin: 15px;
+}
+.container .comment .fio .name {
+    font-size: 20px;
+    /* font-family: "OpenSans", sans-serif; */
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.container .comment .fio .position {
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(134, 135, 139);
+    line-height: 1.2;
+}
