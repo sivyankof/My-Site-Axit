@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../CV_Artem"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "My_site "
+	}
+}
