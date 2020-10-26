@@ -569,9 +569,44 @@
      font-size: 16px;
  }
 
- /* @media (max-width: 1150px) {
-    body {zoom: 0.7;}
-  } */
- /* @media (max-width: 900px) {
-    body {zoom: 0.5;}
-} */
+.contact .container {
+    padding: 0px 140px 80px 140px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+ .contact__items {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 90px;
+ }
+ .contact_items-name {
+     display: flex;
+     flex-direction: column ;
+     line-height: 40px;
+     
+ }
+ .contact_items-name > input {
+     line-height: 34px;
+     width: 520px;
+ }
+ .contact_items_message p {
+    color: rgba(128, 128, 128, 0.534);
+    width: 285px;
+    font-size: 14px;
+    padding: 10px;
+ }
+ .comtact__items_comment {
+     width: 520px;
+     height: 120px;
+     outline: none;
+     border: none;
+     font-size: 20px;
+     resize: none;
+ }
+ 
+ .contact__btn {
+     display: flex;
+     justify-content: center;
+ }
+ 
