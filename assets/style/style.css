@@ -1,478 +1,577 @@
  * {
-    margin: 0;
-}
-.navbar {                /* стили для меню навбара  */
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    height: 70px;
-    width: 100%;
-    justify-content: space-between
-}
-.navbar_img {
-    width: 79px;
-    height: 27px;
-    padding: 20px 0px 20px 150px
-}
-.navbar_title {
-    display: flex;
-    flex-direction: row;
-    align-self: center
-}
-
-.navbar_title a {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.69);
-    line-height: 1.2;
-    text-decoration: none
-    }
-.navbar_title nav > a:link {         /* стили для кнопоко меню навбара */
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.69)
-} 
-.navbar_title nav > a:visited { 
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.69)
-} 
-.navbar_title nav > a:hover {
-    text-decoration: underline;
-    color: rgb(255, 255, 255);
-    transition: 0.4s
-}
-.navbar_title nav > a:active { 
-    text-decoration: none;
-    color: #ff8126
-}
-.header {                    /* стили для второго блока header */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: no-repeat url(../images/Header_Panel.png); 
-    width: auto;
-    height: 711px;
-    background-size: 100%;
-    padding: 180px 150px 0 150px
-}
-.header_block {
-    height: min-content;
-    max-width: 520px
-}
-.signap {                   /* блок ввода своих данных */
-    width: 360px;
-    height: 362px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    margin-top: 30px
-}
-.signap_input {
-    display: flex;
-    flex-direction: column
-}
-.header_title {
-    font-size: 36px;
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    text-align: left;
-    margin-top: 22px
-}
-.header_divider {
-      margin: 27px 0 21px -4px
-}
-.header_text {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.438;
-    text-align: left;
-    FONT-WEIGHT: 300
-}
-.button_download {    /* кнопка скачать  */
-    border: none;
-    font-size: 15px;
-    FONT-WEIGHT: 600;
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    background: url(../images/Download_Button_Header.png);
-    width: 135px;
-    height: 42px;
-    margin-top: 41px;
-    padding: 0;
-    outline: none
-}
-.button_download:hover { 
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition-duration: 0.4s
-}
-.signap_title {
-    box-sizing: border-box;
-    font-size: 20px;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
-    height: 54px;
-    padding: 15px 0 15px 0;
-    background-color: #f5f5f5;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px
-}
-.free {   /* оранжевый цвет для текста фри в титле сигнапа */
-    color: #fca667
-}
-input {
-    box-sizing: border-box;
-    border: none;
-    border-bottom: solid 1px rgb(189, 189, 189);
-    width: 285px;
-    font-size: 12px;
-    padding:10px;
-    outline: none
-}
-input::placeholder {
-        color: rgb(189, 189, 189);
-        font-size: 1.2em
-}
-div .signap_input {
-    box-sizing: border-box;
-    align-items: center;
-    height: 254px;
-    justify-content: space-around;
-    background-color: #ffffff;
-    padding: 4px 0 32px
-}
-.button_starter {    /* кнопка для старта сигнапа */
-    border: none;
-    font-size: 15px;
-    FONT-WEIGHT: 600;
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    background: #ff9b51;
-    width: 360px;
-    height: 54px;
-    padding: 0px;
-    outline: none;   
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px
-}
-.button_starter:hover { 
-    text-decoration: none;
-    background-color: #ff801f;
-    transition-duration: 0.4s
-}
-.brand_bar {   /* третьи блок с иконками брендов */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 105px;
-    padding: 18px 167px 20px 150px ;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5)
-}
-.brand_box1 {
-    width: 364px
-}
-.brand_box1 h2 {
-    font-size: 20px;
-    color: rgb(51, 51, 51);
-    font-weight: bold
-}
-.brand_box1 .brand_box_text {
-    font-size: 14px;
-    color: rgb(134, 135, 139);
-    line-height: 1.429
-}
-.brand_box2 {
-    align-self: center
-}
-
-.a, button, .button_starter:hover {  /* палец вверх на кнопки */
-    cursor: pointer
-}
-.social_links_element {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 635px
-}
-.social_links_element i { 
-    display: block;
-    font-size: 48px;
-    font-family: "FontAwesome";
-    color: rgb(204, 204, 204);
-    font-style: normal;
-    line-height: 1.2;
-    text-decoration: none
+     margin: 0;
  }
-.social_links_element i:hover{
-    color: #ff801f;
-    text-decoration: none;
-    transform: scale(1.2);  
-    transition: 0.4s;
-    text-decoration: none
-}
-a {
-    text-decoration: none
-}
-.features {     /* третьи блок с текстом и 3 табами и картинкой */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #f5f5f5;
-    height: 595px;
-    justify-content: center;
-    align-items: center
-}
-.features .first {
-    display: flex;
-    flex-direction: row;
-    height: 334px;
-    padding: 0px
+
+ .navbar {
+     /* стили для меню навбара  */
+     position: fixed;
+     display: flex;
+     flex-direction: row;
+     background-color: black;
+     height: 70px;
+     width: 100%;
+     justify-content: space-between
  }
-.control {
-    display: flex;
-    width: 112px;
-    height: 112px;
-    align-items: center;
-    justify-content: center;
-    background-color: #333333;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 1.333;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
-    margin: 1px
-}
-.features .container {       
-    margin: 0px 100px 0 100px;
-    width: 474px
-}
-.title p {
-    font-size: 20px; 
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 50px;
-    margin-top: 10px
-}
-.text p {
-    font-size: 14px;
-    color: rgb(134, 135, 139);
-    line-height: 1.429;
-    margin-bottom: 30px;
-    text-align: justify
-}
-.button_download_features {    /* кнопка скачать в 3 блоке */
-    border: none;
-    font-size: 15px;
-    FONT-WEIGHT: 600;
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    background: #ff8b38;
-    width: 121px;
-    height: 46px;
-    padding: 0px;
-    outline: none;   
-    border-radius: 4px;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.5)
-}
-.button_download_features:hover {
-    background-color:#ff8126
-}
-.tab_1:hover, .tab_2:hover, .tab_3:hover {
-    background-color: #ff8b38
-}
-.our_process {
-    display: flex;
-    flex-direction: column;
-    height: 592px;
-    background-color: white;
-    justify-content: center;
-    align-items: center
-}
+
+ .navbar_img {
+     width: 79px;
+     height: 27px;
+     padding: 20px 0px 20px 150px
+ }
+
+ .navbar_title {
+     display: flex;
+     flex-direction: row;
+     align-self: center
+ }
+
+ .navbar_title a {
+     font-size: 14px;
+     color: rgba(255, 255, 255, 0.69);
+     line-height: 1.2;
+     text-decoration: none
+ }
+
+ .navbar_title nav>a:link {
+     /* стили для кнопоко меню навбара */
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.69)
+ }
+
+ .navbar_title nav>a:visited {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.69)
+ }
+
+ .navbar_title nav>a:hover {
+     text-decoration: underline;
+     color: rgb(255, 255, 255);
+     transition: 0.4s
+ }
+
+ .navbar_title nav>a:active {
+     text-decoration: none;
+     color: #ff8126
+ }
+
+ .header {
+     /* стили для второго блока header */
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     background: no-repeat url(../images/Header_Panel.png);
+     background-attachment: fixed;
+     background-size: cover;
+     height: 711px;
+     padding: 180px 150px 0 150px
+ }
+
+ .header_block {
+     height: min-content;
+     max-width: 520px
+ }
+
+ .signap {
+     /* блок ввода своих данных */
+     margin-top: 30px
+ }
+
+ .signap_input {
+     display: flex;
+     flex-direction: column
+ }
+
+ .header_title {
+     font-size: 36px;
+     color: rgb(255, 255, 255);
+     line-height: 1.2;
+     text-align: left;
+     margin-top: 22px
+ }
+
+ .header_divider {
+     margin: 27px 0 21px -4px
+ }
+
+ .header_text {
+     font-size: 16px;
+     color: rgba(255, 255, 255, 0.8);
+     line-height: 1.438;
+     text-align: left;
+     FONT-WEIGHT: 300
+ }
+
+ .button_download {
+     /* кнопка скачать  */
+     border: none;
+     font-size: 15px;
+     FONT-WEIGHT: 600;
+     color: rgb(255, 255, 255);
+     line-height: 1.2;
+     background: url(../images/Download_Button_Header.png);
+     width: 135px;
+     height: 42px;
+     margin-top: 41px;
+     padding: 0;
+     outline: none
+ }
+
+ .button_download:hover {
+     text-decoration: none;
+     background-color: rgba(255, 255, 255, 0.1);
+     transition-duration: 0.4s
+ }
+
+ .signap_title {
+     font-size: 20px;
+     color: rgb(51, 51, 51);
+     font-weight: bold;
+     line-height: 1.2;
+     text-align: center;
+     padding: 15px 0 15px 0;
+     background-color: #f5f5f5;
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px
+ }
+
+ .free {
+     /* оранжевый цвет для текста фри в титле сигнапа */
+     color: #fca667
+ }
+
+ input {
+     box-sizing: border-box;
+     border: none;
+     border-bottom: solid 1px rgb(189, 189, 189);
+     width: 285px;
+     font-size: 12px;
+     padding: 10px;
+     outline: none
+ }
+
+ input::placeholder {
+     color: rgb(189, 189, 189);
+     font-size: 1.2em
+ }
+
+ div .signap_input {
+     box-sizing: border-box;
+     align-items: center;
+     height: 254px;
+     justify-content: space-around;
+     background-color: #ffffff;
+     padding: 4px 0 32px
+ }
+
+ .button_starter {
+     /* кнопка для старта сигнапа */
+     border: none;
+     font-size: 15px;
+     FONT-WEIGHT: 600;
+     color: rgb(255, 255, 255);
+     background: #ff9b51;
+     width: 360px;
+     height: 54px;
+     padding: 0px;
+     outline: none;
+     border-bottom-left-radius: 4px;
+     border-bottom-right-radius: 4px
+ }
+
+ .button_starter:hover {
+     text-decoration: none;
+     background-color: #ff801f;
+     transition-duration: 0.4s
+ }
+
+ .brand_bar {
+     /* третьи блок с иконками брендов */
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     height: 105px;
+     padding: 18px 167px 20px 150px;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+ }
+
+ .brand_box1 {
+     width: 364px
+ }
+
+ .brand_box1 h2 {
+     font-size: 20px;
+     color: rgb(51, 51, 51);
+     font-weight: bold
+ }
+
+ .brand_box1 .brand_box_text {
+     font-size: 14px;
+     color: rgb(134, 135, 139);
+     line-height: 1.429
+ }
+
+ .brand_box2 {
+     align-self: center
+ }
+
+ .a,
+ button,
+ .button_starter:hover {
+     /* палец вверх на кнопки */
+     cursor: pointer
+ }
+
+ .social_links_element {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 635px
+ }
+
+ .social_links_element i {
+     display: block;
+     font-size: 48px;
+     font-family: "FontAwesome";
+     color: rgb(204, 204, 204);
+     font-style: normal;
+     line-height: 1.2;
+     text-decoration: none
+ }
+
+ .social_links_element i:hover {
+     color: #ff801f;
+     text-decoration: none;
+     transform: scale(1.2);
+     transition: 0.4s;
+     text-decoration: none
+ }
+
+ a {
+     text-decoration: none
+ }
+
+ .features {
+     /* третьи блок с текстом и 3 табами и картинкой */
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     background-color: #f5f5f5;
+     height: 595px;
+     justify-content: center;
+     align-items: center
+ }
+
+ .features .first {
+     display: flex;
+     flex-direction: row;
+     height: 334px;
+     padding: 0px
+ }
+
+ .control {
+     display: flex;
+     width: 112px;
+     height: 112px;
+     align-items: center;
+     justify-content: center;
+     background-color: #333333;
+     color: #ffffff;
+     font-size: 15px;
+     font-weight: bold;
+     line-height: 1.333;
+     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+     margin: 1px
+ }
+
+ .features .container {
+     margin: 0px 100px 0 100px;
+     width: 474px
+ }
+
+ .title p {
+     font-size: 20px;
+     color: rgb(0, 0, 0);
+     font-weight: bold;
+     line-height: 1.2;
+     margin-bottom: 50px;
+     margin-top: 10px
+ }
+
+ .text p {
+     font-size: 14px;
+     color: rgb(134, 135, 139);
+     line-height: 1.429;
+     margin-bottom: 30px;
+     text-align: justify
+ }
+
+ .button_download_features {
+     /* кнопка скачать в 3 блоке */
+     border: none;
+     font-size: 15px;
+     FONT-WEIGHT: 600;
+     color: rgb(255, 255, 255);
+     line-height: 1.2;
+     background: #ff8b38;
+     width: 121px;
+     height: 46px;
+     padding: 0px;
+     outline: none;
+     border-radius: 4px;
+     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5)
+ }
+
+ .button_download_features:hover {
+     background-color: #ff8126
+ }
+
+ .tab_1:hover,
+ .tab_2:hover,
+ .tab_3:hover {
+     background-color: #ff8b38
+ }
+
+ .our_process {
+     display: flex;
+     flex-direction: column;
+     height: 592px;
+     background-color: white;
+     justify-content: center;
+     align-items: center
+ }
+
  .container .title {
-    font-size: 36px;
-    color: rgb(33, 33, 33);
-    line-height: 1.194;
-    text-align: center;
-}
-.circle {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border: 2px solid #ff8b38;
-    border-radius: 70px;
-    width: 70px;
-    height: 70px
-}
-.wrapper_box {
-    display: flex;
-    flex-direction: row
-}
-.container_box {
-    width: 350px
-}
-.title_text, .box_text {
-    font-size: 15px;
-    color: rgb(134, 135, 139);
-    line-height: 1.429;
-    text-align: center
-}
-.wrapper_box .container_box >* {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 30px
-}
-.wrapper_box .box_title {
-    font-size: 20px;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 1.2
-}
+     font-size: 36px;
+     color: rgb(33, 33, 33);
+     line-height: 1.194;
+     text-align: center;
+ }
 
-.our_process .container {
-    margin-bottom: 80px
-}
-.pricing {      /* начало контейнера ПРисинн*/
-    height: 883px;
-    background-color: #f5f5f5
-}
-.pricing .container {
-    padding-top: 100px;
-    margin: 0px auto 80px
-}
-.wrapper_box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 0 150px 0 150px
-}
-.wrapper_box li {
-    height: 40px;
-    text-align: center;
-    margin-bottom: 1px;
-    padding-top: 10px;
-    box-sizing: border-box; 
-    width: 343px
-}
-.basic {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.2;
-    background-color: #333333
-}
-.box ul .price {
-    font-size: 80px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 0.686;
-    text-align: center;
-    background-color: #333333;
-    height: 100px
-}
-.text_comm {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.502);
-    line-height: 1.714;
-    text-align: center;
-    background-color: #333333
-}
-.texte_gray {
-    font-size: 14px;
-    color: rgb(134, 135, 139);
-    text-transform: uppercase;
-    line-height: 1.714;
-    text-align: center;
-    background-color: white
-}
- 
-.box ul .texte_gray:hover{
-    color: white;
-    background-color: #ff8b38;
-    cursor: pointer;
-    transition-duration: 0.2s;
-    transform: scale(1.03)
-}
-  
-.testimonials .container:first-child {  /* седьмой блок с отзывами*/
-    width: 655px;
-    margin: 100px auto 50px
-}
-.testimonials {
-    padding: 0 170px 100px 170px
-}
+ .circle {
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     border: 2px solid #ff8b38;
+     border-radius: 70px;
+     width: 70px;
+     height: 70px
+ }
 
-.testimonials .comment {
-    width: 273px
-}
+ .wrapper_box {
+     display: flex;
+     flex-direction: row
+ }
 
-.testimonials .photo_fio  {
-    display: flex;
-    flex-direction: row
-}
-.testimonials .container:last-child {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
-}
-.container .wrapper_comment{
-    background: no-repeat url(../images/background_comment.png);
-    padding: 20px 10px 40px 10px;
-    margin-bottom: 5px;
-    font-size: 15px;
-    font-family: "OpenSans", sans-serif;
-    color: rgb(134, 135, 139);
-    line-height: 1.2;
-    font-style: italic
-}
+ .container_box {
+     width: 350px
+ }
 
-.container .fio {
-    margin: 15px
-}
-.container .name {
-    font-size: 20px;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 1.2
-}
+ .title_text,
+ .box_text {
+     font-size: 15px;
+     color: rgb(134, 135, 139);
+     line-height: 1.429;
+     text-align: center
+ }
 
-.container .position {
-    font-size: 14px;
-    color: rgb(134, 135, 139);
-    line-height: 1.2
-}
+ .wrapper_box .container_box>* {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-bottom: 30px
+ }
 
-.header_title, .price, .header_text, .container .title{
-    font-family: "Raleway";
-}
+ .wrapper_box .box_title {
+     font-size: 20px;
+     color: rgb(51, 51, 51);
+     font-weight: bold;
+     line-height: 1.2
+ }
 
-a, .position, .texte_gray, .text_comm , .button_download, .signap_title, .button_starter, h2 .brand_box_text, .control, p, .button_download_features, .box_text, .basic{ 
-    font-family: 'Open Sans', sans-serif
-}
-.custom_section {    /* седьмой блок с фоновой картинкой и кнопкой скачать*/
-    background: url(../images/Custom-Panel.png);
-    height: 320px;
-}
-.custom_section .container {
-    padding-top: 68px;
-    color: white;
-}
-.custom_section .title {
-    color: white;
-}
+ .our_process .container {
+     margin-bottom: 80px
+ }
 
-.custom_section form {
-    display: flex;
-    justify-content: center;
-}
-.custom_section .button_download {
-    margin-top: 33px;
-}
-.custom_section .title_text {
-    font-size: 16px;
-  }
-  
+ .pricing {
+     /* начало контейнера ПРисинн*/
+     height: 883px;
+     background-color: #f5f5f5
+ }
+
+ .pricing .container {
+     padding-top: 100px;
+     margin: 0px auto 80px
+ }
+
+ .wrapper_box {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: flex-end;
+     padding: 0 150px 0 150px
+ }
+
+ .wrapper_box li {
+     height: 40px;
+     text-align: center;
+     margin-bottom: 1px;
+     padding-top: 10px;
+     box-sizing: border-box;
+     width: 343px
+ }
+
+ .basic {
+     font-size: 20px;
+     color: rgb(255, 255, 255);
+     font-weight: bold;
+     line-height: 1.2;
+     background-color: #333333
+ }
+
+ .box ul .price {
+     font-size: 80px;
+     color: rgb(255, 255, 255);
+     font-weight: bold;
+     line-height: 0.686;
+     text-align: center;
+     background-color: #333333;
+     height: 100px
+ }
+
+ .text_comm {
+     font-size: 14px;
+     color: rgba(255, 255, 255, 0.502);
+     line-height: 1.714;
+     text-align: center;
+     background-color: #333333
+ }
+
+ .texte_gray {
+     font-size: 14px;
+     color: rgb(134, 135, 139);
+     text-transform: uppercase;
+     line-height: 1.714;
+     text-align: center;
+     background-color: white
+ }
+
+ .box ul .texte_gray:hover {
+     color: white;
+     background-color: #ff8b38;
+     cursor: pointer;
+     transition-duration: 0.2s;
+     transform: scale(1.03)
+ }
+
+ .testimonials .container:first-child {
+     /* седьмой блок с отзывами*/
+     width: 655px;
+     margin: 100px auto 50px
+ }
+
+ .testimonials {
+     padding: 0 170px 100px 170px
+ }
+
+ .testimonials .comment {
+     width: 273px
+ }
+
+ .testimonials .photo_fio {
+     display: flex;
+     flex-direction: row
+ }
+
+ .testimonials .container:last-child {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between
+ }
+
+ .container .wrapper_comment {
+     background: no-repeat url(../images/background_comment.png);
+     padding: 20px 10px 40px 10px;
+     margin-bottom: 5px;
+     font-size: 15px;
+     font-family: "OpenSans", sans-serif;
+     color: rgb(134, 135, 139);
+     line-height: 1.2;
+     font-style: italic
+ }
+
+ .container .fio {
+     margin: 15px
+ }
+
+ .container .name {
+     font-size: 20px;
+     color: rgb(51, 51, 51);
+     font-weight: bold;
+     line-height: 1.2
+ }
+
+ .container .position {
+     font-size: 14px;
+     color: rgb(134, 135, 139);
+     line-height: 1.2
+ }
+
+ .header_title,
+ .price,
+ .header_text,
+ .container .title {
+     font-family: "Raleway";
+ }
+
+ a,
+ .position,
+ .texte_gray,
+ .text_comm,
+ .button_download,
+ .signap_title,
+ .button_starter,
+ h2 .brand_box_text,
+ .control,
+ p,
+ .button_download_features,
+ .box_text,
+ .basic {
+     font-family: 'Open Sans', sans-serif
+ }
+
+ .custom_section {
+     /* седьмой блок с фоновой картинкой и кнопкой скачать*/
+     background: url(../images/Custom-Panel.png);
+     height: 320px;
+ }
+
+ .custom_section .container {
+     padding-top: 68px;
+     color: white;
+ }
+
+ .custom_section .title {
+     color: white;
+ }
+
+ .custom_section form {
+     display: flex;
+     justify-content: center;
+ }
+
+ .custom_section .button_download {
+     margin-top: 33px;
+ }
+
+ .custom_section .title_text {
+     font-size: 16px;
+ }
+
+ /* @media (max-width: 1150px) {
+    body {zoom: 0.7;}
+  } */
+ /* @media (max-width: 900px) {
+    body {zoom: 0.5;}
+} */
