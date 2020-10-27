@@ -19,13 +19,12 @@
 </head>
 
 <body>
-	<div class="bodys">
 		<div class="navbar">
 			<!-- навбар, черная полоска сверху -->
-			<div class="navbar_img">
+			<div class="navbar__img">
 				<img src="./assets/images/Logo1.1.png" alt="Должно быть лого">
 			</div>
-			<div class="navbar_title">
+			<div class="navbar__title">
 				<!-- меню сайта -->
 				<nav class="navbar_title_1"><a href="#Features">Features</a></nav>
 				<nav class="navbar_title_2"><a href="#About">About</a></nav>
@@ -34,46 +33,41 @@
 				<nav class="navbar_title_6"><a href="#Contact">Contact</a></nav>
 			</div>
 		</div>
-		<div class="header">
-			<!-- второй блок с текстом и кнопкой скачать и блоком ввода данных -->
-			<div class="header_block one">
-				<div class="header_img_fon">
+		<div class="header">   <!-- второй блок с текстом и кнопкой скачать и блоком ввода данных -->
+			<div class="header__block one">
+				<div class="header__block_img_">
 					<img src="./assets/images/Logo_header.png" alt="большое лого">
 				</div>
-				<div class="header_title">
+				<div class="header__block_title">
 					MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
 				</div>
-				<div class="header_divider">
+				<div class="header__block_divider">
 					<img src="./assets/images/divider_white_u72.png">
 				</div>
-				<div class="header_text">
+				<div class="header__block_text">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
 					euismod bibendum laoreet. Proin gravida dolor sit amet lacus
 					accumsan et viverra justo commodo.
 				</div>
-				<form action="#">
+				<form action="#" class="header__block_btn">
 					<button type="button" class="button_download">Download</button>
 				</form>
 			</div>
-			<div class="header_block two">
-				<div class="signap">
-					<!-- блок с сингапом для ввода данных -->
-					<div class="signap_title">
-						Try Your <span class="singnap free">FREE</span> Trial Today
+			<div class="header__block two">
+				<div class="header__block_signap">       <!-- блок с сингапом для ввода данных -->
+					<div class="header__block_signap_title">
+						Try Your <span class="free">FREE</span> Trial Today
 					</div>
-					<form action="#">
-						<div class="signap_input">
+					<form action="#" class="header__block_signap_input">
 							<input type="text" class="signap_input_name" placeholder="Name">
 							<input type="email" class="signap_input_email" placeholder="Email">
 							<input type="password" class="signap_input_password" placeholder="Password">
-						</div>
-						<input type="submit" class="button_starter" value="Get Started" />
 					</form>
+					<button type="submit" class="header__block_signap_btn" value="Get Started">Get Started</button>
 				</div>
 			</div>
 		</div>
-		<div class="brand_bar" style="background-color: #ffffff;">
-			<!-- третьи блок соцсетей -->
+		<div class="brand_bar" style="background-color: #ffffff;">          <!-- третьи блок соцсетей -->
 			<div class="brand_box1">
 				<h2>Social Media</h2>
 				<div class="brand_box_text">
@@ -435,7 +429,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 </body>
 
 </html>

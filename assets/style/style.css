@@ -1,10 +1,31 @@
- * {
+body {
      margin: 0;
+    
+ }
+ .header__block_title,
+ .price,
+ .header__block_text,
+ .container .title {
+     font-family: "Raleway";
  }
 
+ a,
+ .position,
+ .texte_gray,
+ .text_comm,
+ .button_download,
+ .header__block_signap_title,
+ .header__block_signap_btn,
+ h2 .brand_box_text,
+ .control,
+ p,
+ .button_download_features,
+ .box_text,
+ .basic {
+     font-family: 'Open Sans', sans-serif
+ }
  .navbar {
      /* стили для меню навбара  */
-     position: fixed;
      display: flex;
      flex-direction: row;
      background-color: black;
@@ -13,11 +34,11 @@
      justify-content: space-between
  }
 
- .navbar_img {
+ .navbar__img {
     padding: 20px 0px 20px 150px
  }
 
- .navbar_title {
+ .navbar__title {
      display: flex;
      flex-direction: row;
      align-self: center;
@@ -26,7 +47,7 @@
      padding-right: 150px;
  }
 
- .navbar_title a {
+ .navbar__title a {
      font-size: 14px;
      color: rgba(255, 255, 255, 0.69);
      line-height: 1.2;
@@ -34,24 +55,24 @@
      padding-right: 10px;
  }
 
- .navbar_title nav>a:link {
+ .navbar__title nav>a:link {
      /* стили для кнопоко меню навбара */
      text-decoration: none;
      color: rgba(255, 255, 255, 0.69)
  }
 
- .navbar_title nav>a:visited {
+ .navbar__title nav>a:visited {
      text-decoration: none;
      color: rgba(255, 255, 255, 0.69)
  }
 
- .navbar_title nav>a:hover {
+ .navbar__title nav>a:hover {
      text-decoration: underline;
      color: rgb(255, 255, 255);
      transition: 0.4s
  }
 
- .navbar_title nav>a:active {
+ .navbar__title nav>a:active {
      text-decoration: none;
      color: #ff8126
  }
@@ -63,12 +84,12 @@
      flex-direction: row;
      justify-content: space-between;
      background: no-repeat url(../images/Header_Panel.png);
-        background-size: cover;
+    background-size: cover;
      height: 711px;
      padding: 180px 150px 0 150px
  }
 
- .header_block {
+ .header__block {
      height: min-content;
      max-width: 520px
  }
@@ -76,17 +97,32 @@
     min-width: 420px;
  }
 
- .signap {
+ .header__block_signap {
      /* блок ввода своих данных */
      margin-top: 30px
  }
+ .header__block_signap_title {
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    background-color: #f5f5f5;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px
+}
+.free {
+    /* оранжевый цвет для текста фри в титле сигнапа */
+    color: #fca667
+}
 
- .signap_input {
+ .header__block_signap_input {
      display: flex;
      flex-direction: column
  }
 
- .header_title {
+ .header__block_title {
      font-size: 36px;
      color: rgb(255, 255, 255);
      line-height: 1.2;
@@ -94,11 +130,11 @@
      margin-top: 22px
  }
 
- .header_divider {
+ .header__block_divider {
      margin: 27px 0 21px -4px
  }
 
- .header_text {
+ .header__block_text {
      font-size: 16px;
      color: rgba(255, 255, 255, 0.8);
      line-height: 1.438;
@@ -127,22 +163,7 @@
      transition-duration: 0.4s
  }
 
- .signap_title {
-     font-size: 20px;
-     color: rgb(51, 51, 51);
-     font-weight: bold;
-     line-height: 1.2;
-     text-align: center;
-     padding: 15px 0 15px 0;
-     background-color: #f5f5f5;
-     border-top-left-radius: 4px;
-     border-top-right-radius: 4px
- }
 
- .free {
-     /* оранжевый цвет для текста фри в титле сигнапа */
-     color: #fca667
- }
 
  input {
      box-sizing: border-box;
@@ -159,7 +180,7 @@
      font-size: 1.2em
  }
 
- div .signap_input {
+ .header__block_signap_input {
      box-sizing: border-box;
      align-items: center;
      height: 254px;
@@ -168,7 +189,7 @@
      padding: 4px 0 32px
  }
 
- .button_starter {
+ .header__block_signap_btn {
      /* кнопка для старта сигнапа */
      border: none;
      font-size: 15px;
@@ -183,7 +204,7 @@
      border-bottom-right-radius: 4px
  }
 
- .button_starter:hover {
+ .header__block_signap_btn:hover {
      text-decoration: none;
      background-color: #ff801f;
      transition-duration: 0.4s
@@ -224,7 +245,7 @@
 
  .a,
  button,
- .button_starter:hover {
+ .header__block_signap_btn:hover {
      /* палец вверх на кнопки */
      cursor: pointer
  }
@@ -522,29 +543,6 @@
      font-size: 14px;
      color: rgb(134, 135, 139);
      line-height: 1.2
- }
-
- .header_title,
- .price,
- .header_text,
- .container .title {
-     font-family: "Raleway";
- }
-
- a,
- .position,
- .texte_gray,
- .text_comm,
- .button_download,
- .signap_title,
- .button_starter,
- h2 .brand_box_text,
- .control,
- p,
- .button_download_features,
- .box_text,
- .basic {
-     font-family: 'Open Sans', sans-serif
  }
 
  .custom_section {
