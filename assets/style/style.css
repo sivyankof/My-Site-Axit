@@ -100,7 +100,8 @@ body {
 
  .header__block {
      height: min-content;
-     max-width: 520px
+     max-width: 360px;
+     width: 50%;
  }
  .header .one {
     min-width: 420px;
@@ -108,7 +109,8 @@ body {
 
  .header__block_signap {
      /* блок ввода своих данных */
-     margin-top: 30px
+     margin-top: 30px;
+     min-width: 200px;
  }
  .header__block_signap_title {
     font-size: 20px;
@@ -178,7 +180,7 @@ body {
      box-sizing: border-box;
      border: none;
      border-bottom: solid 1px rgb(189, 189, 189);
-     width: 285px;
+     width: 80%;
      font-size: 12px;
      padding: 10px;
      outline: none
@@ -205,7 +207,7 @@ body {
      FONT-WEIGHT: 600;
      color: rgb(255, 255, 255);
      background: #ff9b51;
-     width: 360px;
+     width: 100%;
      height: 54px;
      padding: 0px;
      outline: none;
@@ -323,7 +325,6 @@ body {
      margin-left: 100px;
      max-width: 474px;
      min-width: 335px;
- }
  }
 
  .title p {
@@ -460,7 +461,13 @@ body {
      margin-bottom: 1px;
      padding-top: 10px;
      box-sizing: border-box;
-     width: 343px
+     width: 100%;
+     max-width: 343px;
+ }
+ .wrapper_box ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
 
  .basic {
@@ -506,9 +513,11 @@ body {
      transform: scale(1.03)
  }
  
-.wrapper_box .two {
+.wrapper_box .two,.one,.three {
     padding: 0 10px 0px 10px;
+    width: 31.183%;
 }
+
  
 
  .testimonials .container:first-child {
@@ -685,6 +694,6 @@ body {
 
 
 
-@media screen and ( max-width: 1200px ) {
-    .wrapper_box {
-        zoom: 0.7 ;
+@media screen and ( max-width: 1000px ) {
+    .wrapper_box { zoom: 0.7;}
+    }
