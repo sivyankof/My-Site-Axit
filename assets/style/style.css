@@ -21,7 +21,8 @@ body {
  p,
  .button_download_features,
  .box_text,
- .basic {
+ .basic 
+ {
      font-family: 'Open Sans', sans-serif
  }
  .navbar {
@@ -82,23 +83,19 @@ body {
 
  .header {
      /* стили для второго блока header */
-     box-sizing: border-box;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     background: no-repeat url(../images/Header_Panel.png);
+    box-sizing: border-box;
+    background: no-repeat url(../images/Header_Panel.png);
     background-size: cover;
-     height: 711px;
-     padding: 180px 0 0 0;
-     /* margin: 0 150px 0 150px; */
+    height: 711px;
+    padding: 180px 0 0 0;
+    
     
  }
 .wrappers {
     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 0 150px 0 150px;
-    width: 100;
 }
 
  .header__block {
@@ -225,14 +222,12 @@ body {
  .brand_bar {
      /* третьи блок с иконками брендов */
      box-sizing: border-box;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
      height: 105px;
-     padding: 18px 167px 20px 150px;
+     padding: 18px 0px 20px 0px;
      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-
+     position: relative;
  }
+
 
  .brand_box1 {
      width: 364px;
@@ -294,14 +289,12 @@ body {
  }
 
  .features {
-     /* третьи блок с текстом и 3 табами и картинкой */
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     background-color: #f5f5f5;
-     height: 595px;
-     justify-content: center;
-     align-items: center;
+        /* третьи блок с текстом и 3 табами и картинкой */
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    height: 595px;
+    padding-top: 150px;
+    
  }
 
  .features .first {
@@ -327,8 +320,10 @@ body {
  }
 
  .features .container {
-     margin: 0px 100px 0 100px;
-     width: 474px
+     margin-left: 100px;
+     max-width: 474px;
+     min-width: 335px;
+ }
  }
 
  .title p {
@@ -374,13 +369,16 @@ body {
      background-color: #ff8b38
  }
 
+ .wrappers .second img {
+    max-width: 100%;
+    min-width: 200px;
+}
  .our_process {
-     display: flex;
-     flex-direction: column;
-     height: 592px;
-     background-color: white;
-     justify-content: center;
-     align-items: center;
+    height: 592px;
+    background-color: white;
+ }
+ .our_process .wrappers {
+     display: block;
  }
 
  .container .title {
@@ -400,13 +398,8 @@ body {
      height: 70px
  }
 
- .wrapper_box {
-     display: flex;
-     flex-direction: row
- }
-
  .container_box {
-     width: 350px
+    max-width:355px
  }
 
  .title_text,
@@ -421,7 +414,7 @@ body {
      display: flex;
      flex-direction: row;
      justify-content: center;
-     margin-bottom: 30px
+
  }
 
  .wrapper_box .box_title {
@@ -432,27 +425,33 @@ body {
  }
 
  .our_process .container {
-     margin-bottom: 80px
+    margin: 110px 0 80px 0;
+    min-width: 400px;
  }
 
  .pricing {
      /* начало контейнера ПРисинн*/
      height: 883px;
      background-color: #f5f5f5;
-
  }
+.pricing .wrappers {
+    display: block;
 
+}
  .pricing .container {
      padding-top: 100px;
-     margin: 0px auto 80px
+     margin: 0px auto 80px;
+     min-width: 400px;
  }
-
+ .box_text p {
+    margin: 0px;
+    min-width: 200px;
+ }
  .wrapper_box {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
      align-items: flex-end;
-     margin: 0 150px;
  }
 
  .wrapper_box li {
@@ -506,20 +505,29 @@ body {
      transition-duration: 0.2s;
      transform: scale(1.03)
  }
+ 
+.wrapper_box .two {
+    padding: 0 10px 0px 10px;
+}
+ 
 
  .testimonials .container:first-child {
      /* седьмой блок с отзывами*/
-     width: 655px;
+     min-width: 400px;
      margin: 100px auto 50px
  }
+ .wrapper_comment p {
+     margin: 0px;
+ }
 
- .testimonials {
-     padding: 0 170px 100px 170px;
-
+ .testimonials .wrappers {
+     display: block;
+     margin-bottom: 100px;
  }
 
  .testimonials .comment {
-     width: 273px
+     max-width: 273px;
+     min-width: 200px;
  }
 
  .testimonials .photo_fio {
@@ -530,14 +538,15 @@ body {
  .testimonials .container:last-child {
      display: flex;
      flex-direction: row;
-     justify-content: space-between
+     justify-content: space-between;
+     margin-bottom: 100px;
  }
 
  .container .wrapper_comment {
      background: no-repeat url(../images/background_comment.png);
      padding: 20px 10px 40px 10px;
      margin-bottom: 5px;
-     font-size: 15px;
+     font-size: 14px;
      font-family: "OpenSans", sans-serif;
      color: rgb(134, 135, 139);
      line-height: 1.2;
@@ -565,12 +574,17 @@ body {
      /* седьмой блок с фоновой картинкой и кнопкой скачать*/
      background: url(../images/Custom-Panel.png);
      height: 320px;
-
  }
-
+.custom_section .button_download {
+    margin: 30px 0 0;
+}
+.custom_section form {
+    min-width: 650px;
+}
  .custom_section .container {
      padding-top: 68px;
      color: white;
+     min-width: 650px;
  }
 
  .custom_section .title {
@@ -582,56 +596,58 @@ body {
      justify-content: center;
  }
 
- .custom_section .button_download {
-     margin-top: 33px;
- }
-
  .custom_section .title_text {
      font-size: 16px;
  }
 
 .contact .container {
-    padding: 0px 140px 80px 140px;
+    margin: 0px 140px 80px 145px;
     align-items: center;
     margin-top: 100px;
-
+    min-width: 400px;
 }
 
  .contact__items {
      display: flex;
      justify-content: space-between;
-     margin-top: 90px;
- }
+     margin-top: 70px;
+     }
  .contact_items-name {
      display: flex;
      flex-direction: column ;
      line-height: 40px;
+     width: 50%;
+     padding-right: 70px;
      
  }
  .contact_items-name > input {
      line-height: 34px;
-     width: 520px;
+     width: 100%;
  }
  .contact_items_message p {
     color: rgba(128, 128, 128, 0.534);
     width: 285px;
     font-size: 14px;
-    padding: 10px;
  }
+.contact_items_message {
+    width: 50%;
+}
  .contact__items_comment {
-     width: 520px;
-     height: 120px;
+    height: 120px;
      outline: none;
      border: none;
      font-size: 20px;
      resize: none;
+    width: 100%;
  }
  
  .contact__btn {
      display: flex;
      justify-content: center;
- }
-
+}
+.contact .button_download_features {
+    width: 149px;
+}
 .footer .container {
     display: flex;
     flex-direction: column;
@@ -651,10 +667,7 @@ body {
     line-height: 1.2;
     text-decoration: none;    
 }
-.footer__icon  .social_links_element{
-     max-width: 320px;
-     margin-bottom: 15px;
-}
+ 
 
 .social_links_element i:hover {
     color: #ff801f;
@@ -666,7 +679,12 @@ body {
 .footer__2015 {
     color: rgba(255, 255, 255, 0.502); 
     font-size: 12px; 
-    font-family:OpenSans; 
+    font-family: "OpenSans"; 
     line-height: 1.2;
-
 }
+
+
+
+@media screen and ( max-width: 1200px ) {
+    .wrapper_box {
+        zoom: 0.7 ;
