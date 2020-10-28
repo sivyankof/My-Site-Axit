@@ -32,11 +32,12 @@ body {
      height: 70px;
      max-width: 100vw;
      justify-content: space-between;
-     overflow-x: hidden;
+     /* overflow-x: hidden; */
  }
 
  .navbar__img {
-    padding: 20px 0px 20px 150px
+    padding: 20px 0px 20px 0px;
+    margin-left: 150px;
  }
 
  .navbar__title {
@@ -45,7 +46,8 @@ body {
      align-self: center;
      justify-content: space-between;
      width: 445px;
-     padding-right: 150px;
+     /* padding-right: 150px; */
+     margin-right: 150px;
  }
 
  .navbar__title a {
@@ -87,9 +89,17 @@ body {
      background: no-repeat url(../images/Header_Panel.png);
     background-size: cover;
      height: 711px;
-     padding: 180px 150px 0 150px;
-     overflow-x: hidden;
+     padding: 180px 0 0 0;
+     /* margin: 0 150px 0 150px; */
+    
  }
+.wrappers {
+    display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+    margin: 0 150px 0 150px;
+    width: 100;
+}
 
  .header__block {
      height: min-content;
@@ -221,7 +231,7 @@ body {
      height: 105px;
      padding: 18px 167px 20px 150px;
      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-     overflow-x: hidden;
+
  }
 
  .brand_box1 {
@@ -292,7 +302,6 @@ body {
      height: 595px;
      justify-content: center;
      align-items: center;
-     overflow-x: hidden;
  }
 
  .features .first {
@@ -372,7 +381,6 @@ body {
      background-color: white;
      justify-content: center;
      align-items: center;
-     overflow-x: hidden;
  }
 
  .container .title {
@@ -431,7 +439,7 @@ body {
      /* начало контейнера ПРисинн*/
      height: 883px;
      background-color: #f5f5f5;
-     overflow-x: hidden;
+
  }
 
  .pricing .container {
@@ -444,7 +452,7 @@ body {
      flex-direction: row;
      justify-content: space-between;
      align-items: flex-end;
-     padding: 0 150px 0 150px
+     margin: 0 150px;
  }
 
  .wrapper_box li {
@@ -507,7 +515,7 @@ body {
 
  .testimonials {
      padding: 0 170px 100px 170px;
-     overflow-x: hidden;
+
  }
 
  .testimonials .comment {
@@ -557,7 +565,7 @@ body {
      /* седьмой блок с фоновой картинкой и кнопкой скачать*/
      background: url(../images/Custom-Panel.png);
      height: 320px;
-     overflow-x: hidden;
+
  }
 
  .custom_section .container {
@@ -586,7 +594,7 @@ body {
     padding: 0px 140px 80px 140px;
     align-items: center;
     margin-top: 100px;
-    overflow-x: hidden;
+
 }
 
  .contact__items {
@@ -631,7 +639,7 @@ body {
     background-color: #000000;
     height: 100px;
     justify-content: center;
-    overflow-x: hidden;
+
    
 }
  .footer .social_links_element i {
@@ -660,5 +668,5 @@ body {
     font-size: 12px; 
     font-family:OpenSans; 
     line-height: 1.2;
-    overflow-x: hidden;
+
 }
